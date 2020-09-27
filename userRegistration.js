@@ -12,7 +12,7 @@ class UserRegistration {
         console.log(phoneNoPattern);
     }
     validatePassword = (PassWord) => {
-        let passwordPattern = /^(?=.*[A-Z].*)(?=.*[0-9].*)[A-Za-z0-9]{8,}/.test(PassWord)
+        let passwordPattern = /(?=.*[a-z])(?=.*[0-9])(?=.*[A-Z])(?=.*[@#$%+!]{1}).{8,}/.test(PassWord)
         console.log(passwordPattern);
     }
 }
