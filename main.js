@@ -20,6 +20,8 @@ input.question("Enter your choice:", function (Choice) {
             })
             break;
             case "3":
+                console.log("Validate email Id should be like following samples: "+
+                "abc@yahoo.com, abc-100@yahoo.com, abc.100@yahoo.com, abc111@abc.com, abc-100@abc.net, abc.100@abc.com.au, abc@1.com, abc@gmail.com.com")
             input.question("Enter Email Id: ", function (emailPattern) {
                 Result.validateEmail(emailPattern);
                 process.exit();
