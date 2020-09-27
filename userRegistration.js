@@ -7,5 +7,9 @@ class UserRegistration {
         let emailPattern = /^[0-9a-zA-Z]+([+_.-][0-9a-zA-Z]+)*@[a-zA-Z0-9]+([.][a-zA-Z]{2,3}){1,2}$/.test(EmailId)
         console.log(emailPattern);
     }
+    validatePhoneNo = (PhoneNo) => {
+        let phoneNoPattern = /^[0-9]{2}[ ][0-9]{10}$/.test(PhoneNo)
+        console.log(phoneNoPattern);
+    }
 }
 module.exports = new UserRegistration()
