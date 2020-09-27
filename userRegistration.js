@@ -11,5 +11,9 @@ class UserRegistration {
         let phoneNoPattern = /^[0-9]{2}[ ][0-9]{10}$/.test(PhoneNo)
         console.log(phoneNoPattern);
     }
+    validatePassword = (PassWord) => {
+        let passwordPattern = /^[A-Za-z]{8,}$/.test(PassWord)
+        console.log(passwordPattern);
+    }
 }
 module.exports = new UserRegistration()
